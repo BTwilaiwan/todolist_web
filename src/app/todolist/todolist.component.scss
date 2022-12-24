@@ -1,0 +1,71 @@
+body { 
+    font-size: 16px;
+}
+.center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.required {
+    border: 1px solid red;
+}
+
+button {
+    margin-right: 10px;
+}
+
+.styleCard {
+    margin: 90px;
+}
+
+form {
+    margin: 50px 0 50px 0;
+}
+
+::ng-deep {
+    .p-datatable-thead {
+        word-wrap: break-word;
+        height: 70px;
+        text-align: center;
+        background: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+        font-weight: bold;
+        tr {
+            th {
+                min-width: 100px;
+                width: 100px;
+
+                &#thCheckbox,
+                &.thCheckbox {
+                    min-width: 65px;
+                    max-width: 70px;
+                }
+            }
+        }
+    }
+
+    .p-datatable-tbody {
+        word-wrap: break-word;
+        tr {
+            td {
+                min-width: 100px;
+                width: 100px;
+
+                &#tdAction,
+                &.tdAction {
+                    text-align: center;
+                }
+                
+                &#tdCheckbox,
+                &.tdCheckbox {
+                    text-align: center;
+                    min-width: 65px;
+                    max-width: 70px;
+                }
+            }
+        }
+    }
+}
